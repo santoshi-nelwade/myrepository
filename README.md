@@ -1,6 +1,6 @@
 # myrepository
 This is my first repository.
 <br>
-Author- Santoshi Nelwade
+Author- Santoshi Nelwade(santo)
 <br>
 hellow
