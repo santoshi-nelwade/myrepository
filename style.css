@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f3ef;
+    color: #333;
+}
+
+header {
+    background: #3e2723;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    background: white;
+    color: #6f4e37;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.page {
+    padding: 40px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.img-box {
+    background: #ddd;
+    padding: 60px;
+    text-align: center;
+}
+
+form input, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}
