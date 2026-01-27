@@ -5,17 +5,21 @@
     <title>LifeCare Clinic | Quality Healthcare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
 </head>
+
+
+
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">🏥 LifeCare Clinic</div>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Facilities</a>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="facilities.html" class="nav-link">Facilities</a>
     </nav>
 </header>
 
@@ -41,105 +45,80 @@
     </p>
     <p>
         We believe healthcare should be accessible, transparent, and centered
-        arou
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f5f9ff;
-    color: #333;
-}
+        around patient trust. Every treatment at LifeCare Clinic is delivered
+        with professionalism and compassion.
+    </p>
+</section>
 
-/* NAVBAR */
-.navbar {
-    background: #ffffff;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
+<!-- FEATURES -->
+<section class="features">
+    
+    <h2>Why Choose LifeCare Clinic</h2>
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #0b5ed7;
-}
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>🩺 Modern Medical Care</h3>
+            <p>
+                Evidence-based treatments using updated medical standards
+                and clinical practices.
+            </p>
+        </div>
 
-.navbar nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #0b5ed7;
-    font-weight: 500;
-}
+        <div class="feature-card">
+            <h3>🏥 Clean & Hygienic Facility</h3>
+            <p>
+                Well-maintained infrastructure ensuring patient safety
+                and comfort.
+            </p>
+        </div>
 
-/* HERO */
-.hero {
-    height: 75vh;
-    background: linear-gradient(
-        rgba(11,94,215,0.6),
-        rgba(11,94,215,0.6)
-    ),
-    url("hospital.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    color: white;
-}
+        <div class="feature-card">
+            <h3>👨‍⚕ Patient-Centric Approach</h3>
+            <p>
+                Individual attention and clear communication for every patient.
+            </p>
+        </div>
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
+        <div class="feature-card">
+            <h3>📋 Preventive Focus</h3>
+            <p>
+                Emphasis on early detection and long-term health management.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- CONTACT INFO SECTION -->
+<section class="home-contact">
+    <h2>Visit LifeCare Clinic</h2>
 
-.hero p {
-    max-width: 500px;
-    font-size: 18px;
-}
+    <div class="contact-grid">
+        <div class="contact-box">
+            <h3>📍 Address</h3>
+            <p>Near City Hospital,<br>Main Road, Pune</p>
+        </div>
 
-/* DESCRIPTION */
-.description {
-    padding: 60px;
-    background: #ffffff;
-}
+        <div class="contact-box">
+            <h3>📞 Phone</h3>
+            <p><a href="https://wa.me/919876543210" target="_blank">
+                    +91 98765 43210</a>
+            </p>
 
-.description h2 {
-    color: #0b5ed7;
-}
+        </div>
 
-/* FEATURES */
-.features {
-    padding: 60px;
-    background: #e3f2fd;
-}
+        <div class="contact-box">
+            <h3>⏰ Working Hours</h3>
+            <p>Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: Closed</p>
+        </div>
+    </div>
+</section>
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
 
-.feature-card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.08);
-}
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 LifeCare Clinic | Professional Healthcare Website</p>
+</footer>
 
-/* FOOTER */
-.footer {
-    background: #0b5ed7;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+<script src="script.js"></script>
 
-/* RESPONSIVE */
-@media(max-width: 768px) {
-    .hero h1 {
-        font-size: 32px;
-    }
-    .description, .features {
-        padding: 30px;
-    }
-}
+</body>
+</html>

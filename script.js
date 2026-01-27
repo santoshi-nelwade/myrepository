@@ -1,8 +1,39 @@
-function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+
+        highlightActiveLink();
+        enablePageTransition();
+    });
+
+
+function enablePageTransition() {
+    const links = document.querySelectorAll(".nav-link");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = this.href;
+            }, 300);
+        });
+    });
 }
 
-function visitCafe() {
-    alert("Thank you for choosing Brew Bliss Café! ☕");
+function highlightActiveLink() {
+    const links = document.querySelectorAll(".nav-link");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage || (linkPage === "index.html" && currentPage === "")) {
+            link.classList.add("active");
+        }
+    });
 }
+
